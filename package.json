@@ -1,0 +1,38 @@
+{
+  "name": "my-module-that-rocks",
+  "description": "Yeah it does.",
+  "version": "1.0.0",
+  "author": "Tim Allen <tim@noblesamurai.com>",
+  "license": "SEE LICENSE IN LICENSE",
+  "main": "index.js",
+  "scripts": {
+    "coverage": "nyc -a -c -r html -r text npm test",
+    "pretest": "semistandard --env mocha",
+    "test": "mocha --recursive test",
+    "docs": "jsdoc2md index.js > docs/api.md"
+  },
+  "homepage": "https://github.com/noblesamurai/my-module-that-rocks",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/noblesamurai/my-module-that-rocks.git"
+  },
+  "bugs": {
+    "url": "https://github.com/noblesamurai/my-module-that-rocks/issues"
+  },
+  "engines": {
+    "node": "6.x",
+    "npm": "3.x"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "~3.5.0",
+    "mocha": "~3.2.0",
+    "nyc": "^10.1.2",
+    "semistandard": "*",
+    "jsdoc-to-markdown":"~2.0.1"
+  },
+  "keywords": [],
+  "nyc": {
+    "exclude": [ "coverage", "test" ]
+  }
+}

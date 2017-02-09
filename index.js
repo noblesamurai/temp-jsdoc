@@ -1,8 +1,8 @@
 /**
  * Function that eats lots of breakfast.
  * @param {string} breakfast - The breakfast to eat.
- * @return {Breakfast}
+ * @returns {Breakfast}
  */
-module.exports = function eat (breakfast) {
+function eat (breakfast) {
   return breakfast;
 };
